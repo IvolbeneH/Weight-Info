@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="../css/faleconosco.css">
+</head>
+
+<body>
+    <div id="page-inicio">
+        <nav id="nav-menu">
+            <img src="../assets/imc-removebg-preview.png" width="150" height="100">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="informativos.html">Informativos</a></li>
+                <li><a href="sobrepeso.html">Sobre seu Peso</a></li>
+                <li><a href="faleconosco.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="centro">
+        <h1>FORMULÁRIO</h1>
+        <form action="https://api.staticforms.xyz/submit" method="post" id="form">
+            <label>Nome</label>
+            <input type="text" name="name" id="name">
+            <label>Email</label>
+            <input type="text" name="email" id="email">
+            <label>Telefone</label>
+            <input type="text" name="phone" id="telefone">
+            <label>Sua dúvida.</label>
+            <textarea name="message" id="especi"></textarea>
+            <button type="submit" id="enviar">Enviar</button>
+            <input type="hidden" name="redirectTo" value="../index.html">
+            <input type="hidden" name="accessKey" value="5ff5e7cb-03b4-4898-932f-c1266e129010">
+            <input type="text" name="honeypot" style="display: none;">
+            <input type="hidden" name="subject" value="Formulario Produtos" />
+        </form>
+    </div>
+    <script src="../js/faleconosco.js"></script>
+</body>
+
+</html>
